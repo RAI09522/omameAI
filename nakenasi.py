@@ -35,4 +35,6 @@ while True:
         if not found:
             print("AI: なんだそれ[2]で教えてくれよ")
     elif mode == "2":   
-        
+        new_key = input("何を覚える？(例：みかん) : ")
+        new_val = input("その回答は？(例 : オレンジ色の果物だよ ") :
+        save_knowledge
