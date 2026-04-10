@@ -36,7 +36,7 @@ while True:
             print("AI: なんだそれ[2]で教えてくれよ")
     elif mode == "2":   
         new_key = input("何を覚える？(例：みかん) : ")
-        new_val = input("その回答は？(例 : オレンジ色の果物だよ ") :
+        new_val = input("その回答は？(例 : オレンジ色の果物だよ) : ") 
         save_knowledge(file_path, new_key, new_val)
     
     elif mode == "exit":
