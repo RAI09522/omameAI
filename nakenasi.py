@@ -1,4 +1,4 @@
-import 
+import os
 
 # 1 ファイルから知識を読み取る関数
 def load_brain(file_path):
