@@ -29,4 +29,10 @@ while True:
     if mode == "1":
         user_input = input("何か話してください:")
         found = False
+        for key in brain:
+             print(f"AI: {brain[key]}")
+             found = True
+        if not found:
+            print("AI: なんだそれ[2]で教えてくれよ")
+    elif mode == "2":   
         
