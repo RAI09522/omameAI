@@ -14,3 +14,19 @@ def load_brain(file_path):
 # 2 新しい知識をファイルに書き込む関数
 def save_knowledge(file_path, key, val):
     with open (file_path, "a", ecoding="utf-8") as f: #"a"は追記用
+        f.write(f"{key}|{val}\n")
+    print(f"「{key}」について新しく覚えました！")
+# メイン処理
+print("学習型検索システム")
+file_path = input("brain.txtをドロップしてEnterを押してください").strip().strip('"')
+
+while True:
+    brain = load_brain(file_path) # 常に最新の知識を読み込む
+
+    print("\n[1] 検索する [2] 学習させる [exit] 終了")
+    mode = input("モードを選択:")
+
+    if mode == "1":
+        user_input = input("何か話してください:")
+        found = False
+        
