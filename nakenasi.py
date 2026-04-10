@@ -4,7 +4,7 @@ import os
 def load_brain(file_path):
     brain_data = {}
     if os.path.exists(file_path):
-        with open(file_path, "r", ecoding="utf-8") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 if "|" in line:
@@ -13,7 +13,7 @@ def load_brain(file_path):
     return brain_data 
 # 2 新しい知識をファイルに書き込む関数
 def save_knowledge(file_path, key, val):
-    with open (file_path, "a", ecoding="utf-8") as f: #"a"は追記用
+    with open (file_path, "a", encoding="utf-8") as f: #"a"は追記用
         f.write(f"{key}|{val}\n")
     print(f"「{key}」について新しく覚えました！")
 # メイン処理
