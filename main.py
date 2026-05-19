@@ -39,7 +39,7 @@ while True:
         # 登録されているキーワードを1つずつチェック
         for key in brain:
             if key in user_input: # ユーザーの入力にキーワードが含まれていたら
-                print(f"AI: {brain[key]}")
+                print(f"大豆: {brain[key]}")
                 found = True
                 break # 1つ見つかったら検索を終了
                 
