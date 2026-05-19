@@ -30,11 +30,11 @@ print(f"保存先: {file_path}") # どこに保存されるか画面に表示し
 while True:
     brain = load_brain(file_path) # 常に最新の知識を読み込む
 
-    print("\n[1] 検索する [2] 学習させる [exit] 終了")
+    print("\n[1] 話す [2] 学習させる [exit] 終了")
     mode = input("モードを選択:")
 
     if mode == "1":
-        user_input = input("何か話してください:")
+        user_input = input("なんだよぉ:")
         found = False
         # 登録されているキーワードを1つずつチェック
         for key in brain:
