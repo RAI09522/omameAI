@@ -44,7 +44,7 @@ while True:
                 break # 1つ見つかったら検索を終了
                 
         if not found:
-            print("AI: なんだそれ[2]で教えてくれよ")
+            print("大豆: なんだそれ[2]で教えてくれよ")
             
     elif mode == "2":   
         new_key = input("何を覚える？(例：みかん) : ")
